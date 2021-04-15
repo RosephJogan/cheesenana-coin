@@ -10,25 +10,56 @@
             margin: 0;
             padding: 0;
             border: 0px;
-            background-color: #fff9c5;
+            background-color: #575757;
         }
         .header{
-          background-color: #444444;
-          color: #ffff00;
-          padding-left: 20px;
-          padding-top: 1px;
-          padding-bottom: 1px;
-          border: 0px;
-          text-align: left;
-          font-size: 13px;
-          font-family: 'Trebuchet MS'
+            background-color: #ff9a56;
+            color: #ffff00;
+            padding-left: 20px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            border: 0px;
+            text-align: left;
+            font-size: 15px;
+            font-family: 'Helvetica'
+        }
+        ul {
+            font-size: 20px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .big{
+            float: left;
+            color: #ffae00;
+            font-size: 30px;
+            font-family: 'Trebuchet MS';
+        }
+        .right{
+            float: right;
         }
     </style>
 </head>
-    <div class="header">
-        <h1>CHEESENANA COIN</h1>
-    </div>
-    <br>
+<body>
+    <ul>
+        <li><a href="/" class="big">CHEESENANA COIN</a></li>
+        <li><a href="/register" class="right">Register</a></li>
+        <li><a href="/login" class="right">Login</a></li>
+    </ul>
     <%- body %>
 </body>
-</html> 
+</html>
